@@ -6,6 +6,12 @@ h1 {
     text-align: center;
 }
 
+.parameters {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
 #game {
     display: flex;
     flex-direction: column;
@@ -47,7 +53,6 @@ h1 {
 
 #board {
     display: grid;
-    grid-template-columns: 65px repeat(4, 40px) 65px;
     grid-gap: 10px;
     margin-top: 20px;
 }
