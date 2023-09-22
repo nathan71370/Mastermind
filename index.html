@@ -9,7 +9,7 @@
 <body>
 <h1>Mastermind</h1>
 <div id="game">
-    <h2>Choisissez une couleur :</h2>
+    <h2>Choisissez une combinaison de couleur :</h2>
     <div id="color-picker">
         <div class="color-option" onclick="selectColor(0)"></div>
         <div class="color-option" onclick="selectColor(1)"></div>
@@ -17,11 +17,14 @@
         <div class="color-option" onclick="selectColor(3)"></div>
     </div>
     <button id="validate" onclick="validateGuess()">Valider</button>
-    <div id="board">
-        <!-- La grille sera générée ici via JavaScript -->
+    <div id="board"></div>
+    <div id="score">
+        <div class="color-option-result"></div>
+        <div class="color-option-result"></div>
+        <div class="color-option-result"></div>
+        <div class="color-option-result"></div>
     </div>
-    <div id="score"></div>
-
+    <button id="restart" onclick="resetGame()">Recommencer</button>
 </div>
 <script src="script.js"></script>
 </body>

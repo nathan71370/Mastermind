@@ -19,31 +19,63 @@ h1 {
     align-items: center;
 }
 
+#score {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .color-option {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin: 5px;
     cursor: pointer;
     border: black 1px solid;
+    border-radius: 25px;
+    background-color: #ddd;
+}
+
+.color-option-result {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: black 1px solid;
+    border-radius: 25px;
+    background-color: #ddd;
 }
 
 #board {
     display: grid;
-    grid-template-columns: repeat(6, 40px);
-    grid-gap: 2px;
+    grid-template-columns: 65px repeat(4, 40px) 65px;
+    grid-gap: 10px;
     margin-top: 20px;
 }
 
 .cell {
-    width: 40px;
     height: 40px;
     border: 2px solid #000;
-    background-color: #ddd;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
     font-weight: bold;
+}
+
+.result-cell {
+    width: 40px;
+    border-radius: 25px;
+    background-color: #ddd;
+}
+
+.feedback-cell-misplaced {
+    width: 60px;
+    margin-right: 5px;
+}
+
+.feedback-cell-correct {
+    width: 60px;
+    margin-left: 5px;
 }
 
 #validate {
